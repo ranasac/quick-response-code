@@ -1,10 +1,12 @@
+"""Backward-compatible test module — imports migrated to use the new package layout."""
 import tempfile
 import unittest
 from pathlib import Path
 
 from fastapi.testclient import TestClient
 
-from main import InMemoryRequestStore, create_app
+from app.factory import create_app
+from app.storage.memory import InMemoryRequestStore
 
 
 class QRCodeAPITestCase(unittest.TestCase):

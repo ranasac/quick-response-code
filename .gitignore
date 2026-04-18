@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 storage/
 .venv/
+
+*.egg-info
+ *.png

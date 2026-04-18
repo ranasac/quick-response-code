@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quick-response-code"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.116.1",
+    "uvicorn==0.35.0",
+    "qrcode==8.2",
+    "Pillow==12.2.0",
+    "pymongo==4.14.1",
+    "boto3==1.40.4",
+    "python-multipart==0.0.22",
+    "opencv-python-headless==4.12.0.88",
+    "numpy==2.2.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx==0.28.1",
+    "pytest",
+]
